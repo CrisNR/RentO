@@ -120,6 +120,8 @@ form i {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   margin: 0;
