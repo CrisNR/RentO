@@ -1,0 +1,119 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* START HEADER STYLES */
+
+.logo-top {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.logo-bottom {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    background-color: #1D3557;
+    color: white;
+}
+
+header > a {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:active {
+    color: white;
+}
+
+/* header > * {
+    margin-bottom: 16px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right > ul {
+    display: flex;
+}
+
+.nav-right > ul > li {
+    margin: 0 8px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search > form {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: space-between;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    background-color: #E63946;
+}
+
+.search-btn:hover {
+    background-color: #E84E5A;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.search > i {
+    color: black;
+}
+
+.top-search {
+    display: flex;
+    /* width: 100%; */
+    border-radius: 4px 4px 4px 4px;
+    height: 48px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    align-items: center;
+    flex-grow: 1;
+    background-color: white;
+}
+
+/* END HEADER STYLES */
+
+@media (min-width: 640px) {
+    .logo-top {
+        font-size: 64px;
+    }
+}
