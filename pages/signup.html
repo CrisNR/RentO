@@ -30,8 +30,8 @@
         <input type = "text" id = "email" name = "email" placeholder = "Ex. johnbradshaw@rento.com"><br><br>
         
         <label for = "password">Password</label><br>
-        <input type = "password" id = "password" name = "password"><br>
-        <p class = "create-password">Password must be at least 6  characters.</p>
+        <input type = "password" id = "password" name = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+  
         <label for = "re-enterpassword">Re-enter password</label><br>
         <input type = "password" id = "re-enterpassword" name = "re-enterpassword"><br><br>
 
@@ -39,6 +39,13 @@
         <input type = "submit" value = "Create" class = "create-button">
         <br><span class = "agree">By creating an account, you agree to RentO's <br><a href="terms.html" title="Terms and Policies">Terms &amp; Policies</a> and <a href="privacy.html" title="Privacy Policy">Privacy Policy</a>.</span>
         <br><span class = "agree"><br>Already have an account? <a href="signin.html" title="Sign In">Sign In!</a></span>
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
       </form>
     </div>
     

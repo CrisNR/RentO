@@ -1,6 +1,8 @@
 function validateForm() {
+
     var x = document.forms["sign-in"]["email"].value;
     var y = document.forms["sign-in"]["password"].value;
+
     if (x == "" || x == null) {
       alert("Email must be filled out.");
       return false;
@@ -9,7 +11,14 @@ function validateForm() {
       alert("Password must be filled out.");
       return false;
     }
-    alert("Email is " + x + " and password is " + y)
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x)))
+    {
+      alert("You have entered an invalid email address!")
+      return false;
+    }
+
+
+    alert("You entered " + x + " and " + y);
   }
   
   
@@ -20,8 +29,7 @@ function validateForm() {
   
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
-              
-              // toggle the icon
+
     this.classList.toggle("bi-eye");
   });
   
