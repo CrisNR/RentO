@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Account Information</title>
-    <link rel="stylesheet" href="Accountinfo.css">
-</head>
-<body>
-    <div class="container">
-        <h1>My Account</h1>
-        <div class="Details">
-            <h1>Account details</h1>
-            <h2>Full name</h2>
-            <input type="text" class="input" value="Your Name">
-            <h2>Birthday</h2>
-            <input type="text" class="input" value="Your Birthday">
-            <h2>Email</h2>
-            <input type="text" class="input" value="Your Email">
-            <h2>Phone Number</h2>
-            <input type="text" class="input" value="Your Phone number">    
-            <h2>Password</h2>
-            <input type="password" class="input" value="password">
-            <button class="Button">Save changes</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Account Information</title>
+        <link rel="stylesheet" href="../css/account.css">
+        <script src="../scripts/account.js" defer></script>
+    </head>
+    <body>
+      
+        <div class="header">
+            <div class = "header-center">
+                <h1><a href = "../index.html" title = "Homepage of RentO" class = "home-link">RentO</a></h1>
+                <h2>Account</h2>
+            </div>
         </div>
-        <div class="Payment">
-            <h1>Payment details</h1>
-            <h2>Card Number</h2>
-            <input type="text" class="input" value="Card Number">
-            <h2>Billing Address</h2>
-            <input type="text" class="input" value="Your Address">
-            <h2>Zipcode</h2>
-            <input type="text" class="input" value="Your Zipcode">
-            <h2>Card expiration date</h2>
-            <input type="text" class="input" value="Your card expiration date">
-            <h2>Cvv number</h2>
-            <input type="password" class="input" value="Your cvv">
-            <button class="Button">Save changes</button>
+      
+        <div class = "main">
+            <div class="Details">
+                <h1>Account details</h1>
+                <h2>Full name</h2>
+                <p id = "fullName"></p>
+                <h2>Birthday</h2>
+                <p id = "birthDate"></p>
+                <h2>Phone Number</h2>
+                <p id = "phoneNumber"></p> 
+                <h2>Email</h2>
+                <p id = "email"></p>
+                <h2>Password</h2>
+                <p id = "passWord"></p>
+                <form action="">
+                    <button class="change-Details">Change Details</button>
+                </form>
+            </div>
+
+            <div class="Payment">
+                <h1>Payment details</h1>
+                <h2>Billing Address</h2>
+                <p id = "billingAddress"></p>
+                <h2>City</h2>
+                <p id = "city"></p>
+                <h2>State</h2>
+                <p id = "state"></p>
+                <h2>Zipcode</h2>
+                <p id = "zipCode"></p>
+                <h2>Card Number</h2>
+                <p id = "cardNumber"></p>
+                <h2>Card expiration date</h2>
+                <p id = "cardExp"></p>
+                <h2>CVV number</h2>
+                <p id = "cVV"></p>
+                <form action="">
+                    <button class="change-Details">Change Details</button>
+                </form>
+            </div>
         </div>
-    </div>    
-</body>
+      
+        <footer class="footer">
+            <div></div>
+            <div>
+                <span>&copy;</span>2022 RentO.com LLC
+            </div>
+        
+            <div class = "link">
+                <a href="terms.html" title="Terms and Policies" class = "terms">Terms &amp; Policies</a>
+            </div>
+        
+            <div class = "link">
+                <a href="privacy.html" title="Privacy Policy" class = "policies">Privacy Policy</a>
+            </div>
+             <div></div>
+        
+        </footer>  
+    </body>
 </html>

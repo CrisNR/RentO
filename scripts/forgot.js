@@ -9,6 +9,8 @@ function validateForm() {
       alert("You have entered an invalid email address!")
       return false;
     }
+    alert("An email has been sent to " + x + " to reset your password.");
+    return true;
   }
   
   

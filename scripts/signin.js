@@ -19,6 +19,7 @@ function validateForm() {
 
 
     alert("You entered " + x + " and " + y);
+    return true;
   }
   
   

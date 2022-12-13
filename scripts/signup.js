@@ -2,7 +2,7 @@ var myInput = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
-var length = document.getElementById("length");
+var lengthV = document.getElementById("length");
 
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function() {
@@ -48,11 +48,11 @@ myInput.onkeyup = function() {
 
   // Validate length
   if(myInput.value.length >= 8) {
-    length.classList.remove("invalid");
-    length.classList.add("valid");
+    lengthV.classList.remove("invalid");
+    lengthV.classList.add("valid");
   } else {
-    length.classList.remove("valid");
-    length.classList.add("invalid");
+    lengthV.classList.remove("valid");
+    lengthV.classList.add("invalid");
   }
 }
 
@@ -91,6 +91,7 @@ function validateForm() {
     return false;
   }
 
-  alert("You entered " + fname + " and " + lname);
+  alert("You entered " + fname + " and " + lname
+  + " as your name. \nEmail: " + x + "\nPassword: " + y);
  }
   
