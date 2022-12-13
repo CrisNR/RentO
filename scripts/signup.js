@@ -91,7 +91,19 @@ function validateForm() {
     return false;
   }
 
+  function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+  var uniqueID = makeid(7);
+
   alert("You entered " + fname + " and " + lname
-  + " as your name. \nEmail: " + x + "\nPassword: " + y);
+  + " as your name. \nEmail: " + x + "\nPassword: " + y
+  + "\n Unique ID for Account: " + uniqueID);
  }
   
